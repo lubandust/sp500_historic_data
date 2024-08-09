@@ -151,7 +151,7 @@ def calculate_intrinsic_value(eps, growth_rate):
 
 
 # Function to read historical sp500 ticker list from a CSV file
-def get_tickers_list(input_file="sp500_ticker_periods_tested.csv"):
+def get_tickers_list(input_file="sp500_10yr_range_tickers.csv"):
     try:
         tickers_sp500_data = pd.read_csv(input_file)
         tickers_list = tickers_sp500_data["Ticker"].to_list()
